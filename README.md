@@ -1,0 +1,1 @@
+A basic MongoDB database, written up as an introduction to NoSQL.
