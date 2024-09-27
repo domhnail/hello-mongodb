@@ -1,4 +1,4 @@
-import 'dotenv/config'
+require('dotenv').config();
 console.log(process.env)
 
 const { MongoClient } = require("mongodb");
@@ -25,13 +25,6 @@ const client = new MongoClient(uri);
              "death": new Date(1954, 5, 7),  // May 7, 1954                                                                                                                                  
              "contribs": [ "Turing machine", "Turing test", "Turingery" ],
              "views": 1250000
-           },
-           {
-             "name": { "first": "Grace", "last": "Hopper" },
-             "birth": new Date(1906, 12, 9), // Dec 9, 1906                                                                                                                                 
-             "death": new Date(1992, 1, 1),  // Jan 1, 1992                                                                                                                                  
-             "contribs": [ "Mark I", "UNIVAC", "COBOL" ],
-             "views": 3860000
            }
          ]
 
